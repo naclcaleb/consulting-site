@@ -3,6 +3,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
-window.gsap = gsap
-window.ScrollTrigger = ScrollTrigger
+if (typeof window !== `undefined`) {
 
+    window.gsap = gsap
+    window.ScrollTrigger = ScrollTrigger
+
+}
