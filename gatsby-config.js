@@ -51,6 +51,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [ 'G-5ZCV0W6F8X' ]
+      }
+    },
+    {
       resolve: "@tmttn/gatsby-plugin-hubspot-tracking",
       options: {
           trackingCode: "40164210",
