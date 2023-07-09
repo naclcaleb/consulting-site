@@ -50,5 +50,11 @@ module.exports = {
         icon: `src/images/cover.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [ 'G-5ZCV0W6F8X' ]
+      }
+    }
   ],
 }
