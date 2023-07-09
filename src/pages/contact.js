@@ -14,6 +14,7 @@ const Contact = () => (
                     method="POST"
                     action="https://hook.us1.make.com/osi5ryrlffpwjhqfrta62wpgpuxfetsd"
                     encType="multipart/form-data"
+                    data-netlify='true'
                 >
                     <input
                     type="hidden"
