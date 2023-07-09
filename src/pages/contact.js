@@ -17,6 +17,7 @@ const Contact = () => (
                     encType="multipart/form-data"
                     data-netlify='true'
                 >
+                    <input type="hidden" name="form-name" value="contact" />
                     <input
                     type="hidden"
                     name="_token"
