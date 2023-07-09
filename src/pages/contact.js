@@ -13,7 +13,6 @@ const Contact = () => (
                     yc-form-type="Advanced"
                     method="POST"
                     name='contact'
-                    action="https://hook.us1.make.com/osi5ryrlffpwjhqfrta62wpgpuxfetsd"
                     encType="multipart/form-data"
                     data-netlify='true'
                 >
