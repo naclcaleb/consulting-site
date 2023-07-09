@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@tmttn/gatsby-plugin-hubspot-tracking": "^5.2.0",
     "dotenv": "^16.3.1",
     "gatsby": "^5.11.0",
     "gatsby-plugin-google-gtag": "^5.11.0",

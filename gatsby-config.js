@@ -51,10 +51,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: "@tmttn/gatsby-plugin-hubspot-tracking",
       options: {
-        trackingIds: [ 'G-5ZCV0W6F8X' ]
-      }
+          trackingCode: "40164210",
+          respectDNT: true,
+          productionOnly: true,
+          region: "eu1"
+      },
     }
   ],
 }
