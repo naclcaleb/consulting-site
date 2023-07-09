@@ -103,6 +103,6 @@ export const Head = () => (
         <meta property="twitter:title" content="Caleb Hester - Contact" />
         <meta property="og:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
         <meta property="twitter:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!"></meta>
-        <Script className='dataScript' src='/animations.js' onLoad={() => console.log('animations')}></Script>
+        <Script className='dataScript' src='/animations.js'></Script>
     </>
 )

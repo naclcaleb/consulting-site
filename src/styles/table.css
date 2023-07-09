@@ -35,3 +35,31 @@ table.rounded-corners {
 .blog p {
     line-height: 45px;
 }
+
+.quote {
+    background: #BED8FC;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+hr {
+    border: 2px solid #EEE;
+    margin: 50px;
+}
+
+.quote .quote-bar {
+    background: #0147AA;
+    width: 5px;
+    height: 100%;
+    min-height: 10px;
+    align-self: stretch;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}

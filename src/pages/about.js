@@ -11,9 +11,7 @@ const About = ({ data }) => {
 
     const header = pageData.header.header
     const description = pageData.description.description
-    const photo = pageData.photo.gatsbyImageData
-
-    console.log(description)
+    const photo = pageData.photo
 
     return <Layout>
         <section className="pt-[100px] pb-[100px] sm:pb-[60px] sm:pt-[60px]">
@@ -22,7 +20,8 @@ const About = ({ data }) => {
                 <div data-animation-load="2bnk0jqh4" data-animation-id-2bnk0jqh4="">
                     <GatsbyImage
                     className="w-[auto] h-[auto] max-w-[100%]"
-                    image={photo}
+                    image={photo.gatsbyImageData}
+                    alt={photo.description}
                     srcSet="https://assets.ycodeapp.com/assets/app/images/ATaRygTYQiT88jN079h7nKxGwhjxZBXS0pvtvEw2-published.jpg 800w, https://assets.ycodeapp.com/assets/app/images/ZmPg7SJR129jAXQAWEAuK0R8FSMkUAZPnZ0ggHvS-published.jpg 500w, https://assets.ycodeapp.com/assets/app/images/wWgZwlSHpUooKhlDnjrFCFQVMFcjBT09NCnlZ51o-published.jpg 150w, https://assets.ycodeapp.com/assets/app19033/Images/UszePd9OlcQrwPZoKrWzY3uMNmsBv9y3VIkcqWqD-published.jpg 1032w"
                     sizes="(max-width: 1032px) 100vw, 1032px"
                     />
@@ -36,7 +35,7 @@ const About = ({ data }) => {
                     {header}
                     </h2>
                     <p className="font-normal tracking-[-0.025em] opacity-[50%] leading-[1.625em] text-[20px]">
-                    {description.split('\n').map(item => <>{item}<br /></>)}
+                    {description.split('\n').map((item, i) => <span key={i}>{item}<br /></span>)}
                     </p>
                 </div>
                 </div>
@@ -58,7 +57,7 @@ export const Head = () => (
         <meta property="twitter:title" content="Caleb Hester - About" />
         <meta property="og:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
         <meta property="twitter:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!"></meta>
-        <Script className='dataScript' src='/animations.js' onLoad={() => console.log('animations')}></Script>
+        <Script className='dataScript' src='/animations.js'></Script>
     </>
 )
 
@@ -74,6 +73,7 @@ export const query = graphql`
             }
             photo {
                 gatsbyImageData
+                description
             }
         }
         }

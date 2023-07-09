@@ -1,12 +1,11 @@
 import * as React from "react"
-import { Link, Script, graphql } from "gatsby"
+import { Script, graphql } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import '../dependencies/animations.js'
 
 import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   return <Layout>
     <section className="pt-[80px] pb-[80px] sm:pb-[60px] sm:pt-[64px] lg:grid lg:items-start lg:content-start lg:grid-flow-col-dense flex justify-start items-center pl-[50px] sm:flex sm:flex-col-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse mr-[0px] pr-[50px] bg-opacity-[100%] sm:pl-[25px] sm:pr-[25px]">
       <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] sm:w-[100%] sm:pl-[5px] sm:pr-[5px] sm:ml-[0px] sm:mr-[0px] sm:max-w-[100%]">
@@ -60,6 +59,7 @@ const IndexPage = ({ data }) => {
             <a
               className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none bg-[#0147AA] bg-opacity-[100%] mt-[29px] transform hover:scale-[1.05] duration-75 sm:text-center md:text-center"
               target="_blank"
+              rel='noreferrer'
               href="https://form.feathery.io/to/PNd9AV"
             >
               <span>Get a free 15-minute consult</span>
@@ -67,6 +67,7 @@ const IndexPage = ({ data }) => {
             <a
               className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none bg-opacity-[100%] mt-[29px] transform hover:scale-[1.05] duration-75 bg-[#BED8FC] ml-[25px] sm:ml-[0px] sm:text-center md:ml-[0px] md:text-center"
               target="_blank"
+              rel='noreferrer'
               href="https://calendly.com/naclcaleb"
             >
               <span className="text-opacity-[100%] text-[#0147AA]">
@@ -80,6 +81,10 @@ const IndexPage = ({ data }) => {
         <StaticImage
           className="w-[auto] h-[auto] max-w-[100%]"
           src="../images/cover.png"
+          loading="eager"
+          placeholder='none'
+          alt='Picture of Caleb'
+          imgStyle={{ transition: 'none' }}
         />
       </div>
     </section>
@@ -173,7 +178,7 @@ const IndexPage = ({ data }) => {
             transform: "translate(0px, 0px)"
           }}
         >
-          {data.allContentfulWorkShowcase.nodes.map(work => <div className="hover:underline" data-animation-hover="4bg1vwb1l">
+          {data.allContentfulWorkShowcase.nodes.map((work, i) => <div key={work.id} className="hover:underline" data-animation-hover="4bg1vwb1l">
             <a
               className="hover:rounded-[2px]"
               href={`/work/${work.slug}`}
@@ -182,6 +187,7 @@ const IndexPage = ({ data }) => {
                 <GatsbyImage
                   className="rounded-[8px] object-cover max-w-[auto] w-[100%] min-h-[auto] max-h-[auto] h-[200px] relative top-[0px] right-[0px]"
                   image={work.coverImage.gatsbyImageData}
+                  alt={work.coverImage.title}
                   data-animation-id-luxzhphxt=""
                   style={{
                     translate: "none",
@@ -196,7 +202,7 @@ const IndexPage = ({ data }) => {
                 <span className="text-[16px] text-opacity-[100%] text-[#0147AA]">
                   {work.title}
                 </span>
-                {work.services.map(service => <div className="flex items-center">
+                {work.services.map(service => <div key={service} className="flex items-center">
                   <div className="w-[4px] h-[4px] bg-[black] bg-opacity-[50%] mr-[10px]" />
                   <span className="flex flex-col items-start opacity-[50%] text-[16px] text-opacity-[100%] text-[#0147AA]">
                     {service}
@@ -214,6 +220,9 @@ const IndexPage = ({ data }) => {
           <StaticImage
             className="w-[auto] h-[auto] max-w-[100%]"
             src="../images/technologies.png"
+            loading='eager'
+            alt='Technologies I know'
+            placeholder='none'
           />
           <p className="font-normal tracking-[-0.025em] text-[22px] leading-[1.5em] text-left opacity-[100%] mt-[30px]">
             Working as a full-stack developer for years, I've gained extensive
@@ -306,7 +315,7 @@ const IndexPage = ({ data }) => {
           }}
         >
         { data.allContentfulBlogPost.nodes.map(blogPost => (
-          <div>
+          <div key={blogPost.id}>
             <a
               className="pt-[32px] pb-[32px] flex items-center justify-between hover:underline cursor-pointer"
               href={`/blog/${blogPost.slug}`}
@@ -363,15 +372,13 @@ const IndexPage = ({ data }) => {
  */
 export const Head = () => <>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" sizes="32x32" href="https://assets.ycodeapp.com/assets/app19033/favicons/ZxtYmsZz38BkgI7IBBNgjs7ySaM1Ru2TSesEbQn0.png" />
-  <link rel="apple-touch-icon" sizes="256x256" href="https://assets.ycodeapp.com/assets/app19033/webclips/AgzEYZYPHRCb58bcCMB9nDWoS38YeU3wcEVYyKZt.png" />    
   <title>Caleb Hester - Application Development Consultant</title>
   <meta name="description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
   <meta property="og:title" content="Caleb Hester - Application Development Consultant" />
   <meta property="twitter:title" content="Caleb Hester - Application Development Consultant" />
   <meta property="og:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
   <meta property="twitter:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!"></meta>
-  <Script className='dataScript' src='/animations.js' onLoad={() => console.log('animations')}></Script>
+  <Script className='dataScript' src='/animations.js'></Script>
 </>
 
 export default IndexPage
@@ -394,6 +401,7 @@ export const query = graphql`
               width: 800
               placeholder:BLURRED
             )
+            title
           }
           title
           id

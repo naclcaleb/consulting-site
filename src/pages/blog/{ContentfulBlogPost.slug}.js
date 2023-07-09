@@ -10,7 +10,6 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 export default function BlogPost({ data }) {
     const post = data.contentfulBlogPost
-    console.log(post)
     return (
         <Layout>
             <section className="pb-[80px] pt-[80px]">
@@ -63,6 +62,7 @@ export const query = graphql`
                     width: 800
                     placeholder: BLURRED
                 )
+                title
             }
         }  
     }

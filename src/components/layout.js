@@ -5,21 +5,14 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import React, { useState } from "react"
-import { useStaticQuery, graphql, Link, Script } from "gatsby"
+import React from "react"
 
 import Header from "./header"
 
 import "../styles/main.css"
 import "../styles/other.css"
 
-function triggerWorkflow(e) {
-  window.triggerWorkflow(e)
-}
-
 const Layout = ({ children }) => {
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <>

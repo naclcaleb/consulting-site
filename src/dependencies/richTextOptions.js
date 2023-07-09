@@ -32,7 +32,7 @@ const options = {
       },
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
             const { gatsbyImageData, description } = node.data.target
-            return <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+            return <div style={{ display: 'flex', flexDirection: 'column', width: '100%', marginTop: 20, marginBottom: 20 }}>
                 <div style={{ flex: 1 }}></div>
                 <GatsbyImage image={getImage(gatsbyImageData)} alt={description || 'image'} />
                 <div style={{ flex: 1 }}></div>
@@ -49,6 +49,7 @@ const options = {
       [BLOCKS.TABLE_ROW]: (node, children) => <tr>{children}</tr>,
       [BLOCKS.TABLE_CELL]: (node, children) => <td>{children}</td>,
       [BLOCKS.TABLE_HEADER_CELL]: (node, children) => <th>{children}</th>,
+      [BLOCKS.QUOTE]: (node, children) => <div className='quote'><div className='quote-bar'></div><div className='quote-contents'>{children}</div></div>
     },
   }
 
