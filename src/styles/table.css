@@ -1,0 +1,37 @@
+table.rounded-corners {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    border: 1px solid #BBB;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   
+   /* Apply a border to the right of all but the last column */
+   table.rounded-corners th:not(:last-child),
+   table.rounded-corners td:not(:last-child) {
+    border-right: 1px solid #BBB;
+   }
+   
+   /* Apply a border to the bottom of all but the last row */
+   table.rounded-corners thead tr th, table.rounded-corners tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #BBB;
+   }
+
+   table.rounded-corners thead {
+    background-color: #eee;
+    text-align: center;
+   }
+
+   table.rounded-corners th, td {
+    padding: 20px;
+   }
+
+   table.rounded-corners p {
+    margin: 0;
+   }
+
+.blog p {
+    line-height: 45px;
+}
