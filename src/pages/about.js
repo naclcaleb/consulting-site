@@ -5,6 +5,7 @@ import { Script, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import { GatsbyImage } from 'gatsby-plugin-image'
+import Seo from '../components/seo.js'
 
 const About = ({ data }) => {
     const pageData = data.allContentfulAboutMe.nodes[0]
@@ -51,13 +52,7 @@ export default About
 
 export const Head = () => (
     <>
-        <title>Caleb Hester - About</title>
-        <title>Caleb Hester - About</title>
-        <meta name="description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
-        <meta property="og:title" content="Caleb Hester - About" />
-        <meta property="twitter:title" content="Caleb Hester - About" />
-        <meta property="og:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
-        <meta property="twitter:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!"></meta>
+        <Seo title='Caleb Hester - About'></Seo>
         <Script className='dataScript' src='/animations.js'></Script>
     </>
 )

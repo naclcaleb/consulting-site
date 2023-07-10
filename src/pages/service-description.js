@@ -1,12 +1,13 @@
 import * as React from 'react'
 
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 const ServiceDescription = () => (
     <Layout>
         <section className="pb-[80px] pt-[80px]">
-            <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex justify-center sm:pl-[20px] sm:pr-[20px]">
-                <div className="w-[66.67%] sm:w-[91.67%]">
+            <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] md:pr-[32px] pb-[0] md:pl-[32px] sm:pr-[24px] sm:pl-[24px] flex justify-center pl-[20px] pr-[20px]">
+                <div className="sm:w-[66.67%] w-[91.67%]">
                 <h1 className="text-[48px] font-bold text-center text-opacity-[100%] text-[black]">
                     Consulting Services
                 </h1>
@@ -62,6 +63,7 @@ export default ServiceDescription
 
 export const Head = () => (
     <>
+        <Seo title='Caleb Hester - Service Description'></Seo>
         <title>Caleb Hester - Service Description</title>
         <meta name="description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
         <meta property="og:title" content="Caleb Hester - Service Description" />

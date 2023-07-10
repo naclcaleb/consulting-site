@@ -4,6 +4,7 @@ import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import '../dependencies/animations.js'
 
 import Layout from "../components/layout"
+import Seo from "../components/seo.js"
 
 const IndexPage = ({ data }) => {
   return <Layout>
@@ -372,12 +373,7 @@ const IndexPage = ({ data }) => {
  */
 export const Head = () => <>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Caleb Hester - Application Development Consultant</title>
-  <meta name="description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
-  <meta property="og:title" content="Caleb Hester - Application Development Consultant" />
-  <meta property="twitter:title" content="Caleb Hester - Application Development Consultant" />
-  <meta property="og:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
-  <meta property="twitter:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!"></meta>
+  <Seo title='Caleb Hester - Application Development Consultant'></Seo>
   <Script className='dataScript' src='/animations.js'></Script>
 </>
 
