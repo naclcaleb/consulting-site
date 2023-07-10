@@ -9,8 +9,8 @@ import React from "react"
 
 import Header from "./header"
 
-import "../styles/main.css"
-import "../styles/other.css"
+//import "../styles/main.css"
+//import "../styles/other.css"
 import '../styles/global.css'
 
 const Layout = ({ children }) => {
@@ -23,8 +23,8 @@ const Layout = ({ children }) => {
       </main>
       <footer>
         <section className="sm:pb-[60px] sm:pt-[60px] bg-opacity-[100%] pt-[50px] pb-[50px] bg-[#f4f4f5]">
-          <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] flex justify-center sm:flex-col sm:items-center">
-            <h1 className="font-bold mr-[30px] text-opacity-[100%] text-[#18181b] sm:text-[20px] sm:mb-[10px] md:self-center md:text-[24px] lg:text-[24px] lg:self-center xl:text-[24px] xl:self-center text-[24px] self-center">
+          <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] flex justify-center flex-col sm:flex-row items-center">
+            <h1 className="font-bold mr-[30px] text-opacity-[100%] text-[#18181b] sm:text-[20px] sm:mb-[0px] mb-[10px] md:self-center md:text-[24px] lg:text-[24px] lg:self-center xl:text-[24px] xl:self-center text-[24px] self-center">
               {" "}
               Ready to dive in?{" "}
             </h1>
@@ -41,10 +41,10 @@ const Layout = ({ children }) => {
         </section>
         <section className="pt-[40px] pb-[40px] mt-[AUto] bg-[#0147AA] bg-opacity-[100%]">
           <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px]">
-            <div className="flex items-center justify-between sm:flex-col sm:justify-center sm:gap-[20px]">
+            <div className="flex items-center sm:items-start justify-center sm:flex-col sm:justify-start sm:gap-[20px]">
               <div className="flex flex-col text-[white] text-opacity-[100%]">
-                <span className="text-[16px] sm:text-center">Caleb Hester</span>{" "}
-                <span className="text-[12px] opacity-[50%] sm:text-center">
+                <span className="text-[16px] text-center sm:text-left">Caleb Hester</span>{" "}
+                <span className="text-[12px] opacity-[50%] text-center sm:text-left">
                   2023 © All rights reserved.
                 </span>
               </div>

@@ -15,11 +15,15 @@ export default function BlogPost({ data }) {
             <section className="pb-[80px] pt-[80px]">
                 <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex justify-center sm:pl-[20px] sm:pr-[20px]">
                     <div className="w-[66.67%] sm:w-[91.67%]">
-                        {post.coverImage && <GatsbyImage
-                            image={post.coverImage.gatsbyImageData}
-                            alt={post.coverImage.title}
-                            style={{ marginBottom: 80, borderRadius: 20 }}
-                        />}
+                        <div className='flex flex-row w-[100%]'>
+                            <div style={{flex: 1}}></div>
+                            {post.coverImage && <GatsbyImage
+                                image={post.coverImage.gatsbyImageData}
+                                alt={post.coverImage.title}
+                                style={{ marginBottom: 80, borderRadius: 20 }}
+                            />}
+                            <div style={{flex: 1}}></div>
+                        </div>
                         <h1 className="text-[48px] font-bold text-center text-opacity-[100%] text-[black]" style={{ marginBottom: 20 }}>
                             {post.title}
                         </h1>

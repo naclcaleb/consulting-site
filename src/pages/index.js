@@ -7,8 +7,8 @@ import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => {
   return <Layout>
-    <section className="pt-[80px] pb-[80px] sm:pb-[60px] sm:pt-[64px] lg:grid lg:items-start lg:content-start lg:grid-flow-col-dense flex justify-start items-center pl-[50px] sm:flex sm:flex-col-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse mr-[0px] pr-[50px] bg-opacity-[100%] sm:pl-[25px] sm:pr-[25px]">
-      <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] sm:w-[100%] sm:pl-[5px] sm:pr-[5px] sm:ml-[0px] sm:mr-[0px] sm:max-w-[100%]">
+    <section className="sm:pt-[80px] sm:pb-[80px] pb-[60px] pt-[64px] lg:grid lg:items-start lg:content-start lg:grid-flow-col-dense flex justify-start items-center pl-[50px] flex flex-col-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse mr-[0px] pr-[50px] bg-opacity-[100%] sm:pl-[25px] sm:pr-[25px]">
+      <div className="mt-[0] sm:mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] w-[100%] sm:pl-[5px] sm:pr-[5px] sm:ml-[0px] mr-[0px] max-w-[100%]">
         <div className="block sm:mt-[39px] sm:w-[100%]">
           <div className="max-w-[768px]">
             <h1
@@ -55,9 +55,9 @@ const IndexPage = ({ data }) => {
               You have an awesome idea. I want to show you how to build it.
             </p>
           </div>
-          <div className="flex sm:flex-col md:flex-col">
+          <div className="flex flex-col lg:flex-row">
             <a
-              className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none bg-[#0147AA] bg-opacity-[100%] mt-[29px] transform hover:scale-[1.05] duration-75 sm:text-center md:text-center"
+              className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none bg-[#0147AA] bg-opacity-[100%] mt-[29px] transform hover:scale-[1.05] duration-75 text-center "
               target="_blank"
               rel='noreferrer'
               href="https://form.feathery.io/to/PNd9AV"
@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => {
               <span>Get a free 15-minute consult</span>
             </a>
             <a
-              className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none bg-opacity-[100%] mt-[29px] transform hover:scale-[1.05] duration-75 bg-[#BED8FC] ml-[25px] sm:ml-[0px] sm:text-center md:ml-[0px] md:text-center"
+              className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none bg-opacity-[100%] mt-[29px] transform hover:scale-[1.05] duration-75 bg-[#BED8FC] lg:ml-[25px] ml-[0px] text-center"
               target="_blank"
               rel='noreferrer'
               href="https://calendly.com/naclcaleb"
@@ -77,7 +77,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[100%] max-h-[100%] min-h-[100%] h-[100%] w-[16.67%] flex-1 flex-grow pl-[0px] pr-[0px] transform overflow-hidden lg:w-[100%] sm:self-auto sm:flex sm:justify-center 2xl:flex 2xl:justify-center">
+      <div className="mt-[0] mr-[auto] mb-[30px] ml-[auto] pt-[0] pb-[0] pr-[24px] pl-[24px] max-w-[100%] max-h-[100%] min-h-[100%] h-[100%] flex-1 flex-grow lg:pl-[0px] lg:pr-[0px] transform overflow-hidden w-[50%] lg:w-[70%]">
         <StaticImage
           className="w-[auto] h-[auto] max-w-[100%]"
           src="../images/cover.png"
@@ -95,7 +95,7 @@ const IndexPage = ({ data }) => {
           {" "}
           Building an app is no joke.{" "}
         </h1>
-        <div className="max-w-[80rem] mt-[0] mb-[0] pb-[0] md:pr-[24px] md:pl-[24px] flex flex-row-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse pl-[0px] pr-[0px] mr-[0px] ml-[0px] pt-[30px] md:flex-col-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse sm:pl-[0px] sm:pr-[0px]">
+        <div className="max-w-[80rem] mt-[0] mb-[0] pb-[0] pr-[24px] pl-[24px] flex lg:flex-row-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse md:pl-[0px] md:pr-[0px] mr-[0px] ml-[0px] pt-[30px] flex-col-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse sm:pl-[0px] sm:pr-[0px]">
           <div className="max-w-[80rem] mt-[0] mb-[0] md:pr-[24px] md:pl-[24px] pb-[30px] bg-opacity-[100%] rounded-[16px] mr-[0px] pl-[0px] pr-[0px] ml-[15px] pt-[0px] md:ml-[0px] sm:pl-[0px] sm:pr-[0px]">
             <p className="font-normal tracking-[-0.025em] leading-[1.625em] text-[20px] text-opacity-[100%] text-left mr-[30px] opacity-[80%] bg-[white] bg-opacity-[100%] pt-[50px] pb-[50px] pr-[50px] pl-[50px] rounded-[24px] text-[#3f3f46] md:ml-[30px] sm:ml-[0px] sm:mr-[0px]">
               {" "}
@@ -126,9 +126,9 @@ const IndexPage = ({ data }) => {
               <strong className="">navigate the app development process</strong>{" "}
               and show you what it takes to build out your solution.{" "}
             </h2>
-            <div className="flex mt-[30px] items-start sm:flex-col">
+            <div className="flex mt-[30px] items-start flex-col sm:flex-row">
               <a
-                className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid focus:outline-none block bg-[white] bg-opacity-[100%] duration-75 transform hover:scale-[1.05] w-[auto] mt-[0px] sm:w-[100%]"
+                className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid focus:outline-none block bg-[white] bg-opacity-[100%] duration-75 transform hover:scale-[1.05] sm:w-[auto] mt-[0px] w-[100%]"
                 href="https:"
               >
                 <span className="text-[#0147AA] text-opacity-[100%] font-bold">
@@ -141,7 +141,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
     </section>
-    <section className="pt-[100px] pb-[100px] sm:pb-[60px] sm:pt-[60px] text-[white] bg-[white] bg-opacity-[100%]">
+    <section className="sm:pt-[100px] sm:pb-[100px] pb-[60px] pt-[60px] text-[white] bg-[white] bg-opacity-[100%]">
       <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] duration-75">
         <h2
           className="tracking-[-0.025em] text-opacity-[100%] font-bold text-[#0147AA] text-[48px] text-center"
@@ -167,7 +167,7 @@ const IndexPage = ({ data }) => {
           Past Projects{" "}
         </h1>
         <div
-          className="grid grid-cols-3 gap-[20px] mt-[20px] md:grid-cols-1 bg-opacity-[100%] pt-[30px] pb-[30px] pl-[30px] pr-[30px] rounded-[24px] bg-[#f4f4f5]"
+          className="grid md:grid-cols-3 gap-[20px] mt-[20px] grid-cols-1 bg-opacity-[100%] pt-[30px] pb-[30px] pl-[30px] pr-[30px] rounded-[24px] bg-[#f4f4f5]"
           data-animation-load="y03ejl9g0"
           data-animation-id-y03ejl9g0=""
           style={{
@@ -216,7 +216,7 @@ const IndexPage = ({ data }) => {
           {" "}
           Wide-Ranging, Robust Knowledge{" "}
         </h1>
-        <div className="mb-[0] md:pr-[24px] md:pl-[24px] bg-opacity-[100%] rounded-[24px] bg-[#0147AA] mt-[25px] pl-[50px] pr-[50px] pb-[70px] pt-[70px] block ml-[0px] mr-[0px] w-[100%] max-w-[100%]">
+        <div className="mb-[0] pr-[24px] pl-[24px] bg-opacity-[100%] rounded-[24px] bg-[#0147AA] mt-[25px] md:pl-[50px] md:pr-[50px] pb-[70px] pt-[70px] block ml-[0px] mr-[0px] w-[100%] max-w-[100%]">
           <StaticImage
             className="w-[auto] h-[auto] max-w-[100%]"
             src="../images/technologies.png"
@@ -240,7 +240,7 @@ const IndexPage = ({ data }) => {
           What you'll get from me{" "}
         </h1>
         <div className="bg-[white] bg-opacity-[100%] rounded-[24px] pt-[30px] pb-[30px] pl-[30px] pr-[30px] mr-[0px] mt-[25px]">
-          <ul className="list-disc space-y-[2px] flex text-[20px] leading-[2em] list-outside mt-[0px] pl-[0px]">
+          <ul className="list-disc space-y-[2px] flex md:flex-row flex-col text-[20px] md:leading-[2em] list-outside mt-[0px] pl-[0px]">
             <div className="flex-1 mr-[15px] pl-[30px]">
               <li>
                 <span className="text-[18px]">
@@ -263,7 +263,7 @@ const IndexPage = ({ data }) => {
                 </span>
               </li>
             </div>
-            <div className="flex-1 ml-[10px] pl-[30px]">
+            <div className="flex-1 md:ml-[10px] pl-[30px]">
               <li>
                 <span className="text-[18px]">
                   Criteria for what to look for in a good developer and how to
