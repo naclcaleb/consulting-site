@@ -42,13 +42,13 @@ function Seo({ description, title, children }) {
       <meta property="og:url" content="https://naclcaleb.com/" />
       <meta property="og:title" content="Caleb Hester - Application Development Consultant | Caleb Hester Consulting" />
       <meta property="og:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
-      <meta property="og:image" content="../images/studio-image.jpg" />
+      <meta property="og:image" content="/studio-image.jpg" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://naclcaleb.com/" />
       <meta property="twitter:title" content="Caleb Hester - Application Development Consultant | Caleb Hester Consulting" />
       <meta property="twitter:description" content="Have an app idea but don't know where to start? I'll help you navigate the world of application development and get you what you need to get it built!" />
-      <meta property="twitter:image" content="../images/studio-image.jpg" />
+      <meta property="twitter:image" content="/studio-image.jpg" />
 
       {children}
     </>
