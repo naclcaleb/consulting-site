@@ -7,12 +7,12 @@ import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => {
   return <Layout>
-    <section className="sm:pt-[80px] sm:pb-[80px] pb-[60px] pt-[64px] lg:grid lg:items-start lg:content-start lg:grid-flow-col-dense flex justify-start items-center pl-[50px] flex flex-col-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse mr-[0px] pr-[50px] bg-opacity-[100%] sm:pl-[25px] sm:pr-[25px]">
-      <div className="mt-[0] sm:mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] w-[100%] sm:pl-[5px] sm:pr-[5px] sm:ml-[0px] mr-[0px] max-w-[100%]">
+    <section className="sm:pt-[80px] sm:pb-[80px] pb-[60px] pt-[64px] lg:grid lg:items-start lg:content-start lg:grid-flow-col-dense flex justify-start items-center sm:pl-[50px] flex flex-col-reverse divide-y-reverse divide-x-reverse space-y-reverse space-x-reverse mr-[0px] sm:pr-[50px] bg-opacity-[100%] pl-[25px] pr-[25px]">
+      <div className="mt-[0] sm:mr-[auto] mb-[0] sm:ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px] w-[100%] sm:pl-[5px] sm:pr-[5px] ml-[0px] mr-[0px] max-w-[100%]">
         <div className="block sm:mt-[39px] sm:w-[100%]">
           <div className="max-w-[768px]">
             <h1
-              className="leading-[1.25em] font-normal tracking-[0px] text-[48px] sm:text-[32px] md:text-[30px]"
+              className="leading-[1.25em] font-normal tracking-[0px] sm:text-[48px] text-[32px]"
               data-animation-load="quzh51gb1"
               data-animation-id-quzh51gb1=""
               style={{
