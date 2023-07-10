@@ -16,8 +16,8 @@ const About = ({ data }) => {
     return <Layout>
         <section className="pt-[100px] pb-[100px] sm:pb-[60px] sm:pt-[60px]">
             <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] max-w-[1200px] pl-[24px] pr-[24px]">
-                <div className="grid grid-cols-2 gap-[120px]">
-                <div data-animation-load="2bnk0jqh4" data-animation-id-2bnk0jqh4="">
+                <div className="flex flex-row md:flex-col-reverse">
+                <div data-animation-load="2bnk0jqh4" data-animation-id-2bnk0jqh4="" style={{ flex: 1 }}>
                     <GatsbyImage
                     className="w-[auto] h-[auto] max-w-[100%]"
                     image={photo.gatsbyImageData}
@@ -27,7 +27,8 @@ const About = ({ data }) => {
                     />
                 </div>
                 <div
-                    className="space-y-[32px]"
+                    className="space-y-[32px] mb-8"
+                    style={{ marginBottom: 40, marginLeft: 40, marginRight: 40, flex: 1 }}
                     data-animation-scroll-into-view="8nvgdkry9"
                     data-animation-id-8nvgdkry9=""
                 >

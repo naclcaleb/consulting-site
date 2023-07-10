@@ -34,7 +34,7 @@ const options = {
             const { gatsbyImageData, description } = node.data.target
             return <div style={{ display: 'flex', flexDirection: 'column', width: '100%', marginTop: 20, marginBottom: 20 }}>
                 <div style={{ flex: 1 }}></div>
-                <GatsbyImage image={getImage(gatsbyImageData)} alt={description || 'image'} />
+                <GatsbyImage image={getImage(gatsbyImageData)} alt={description || 'image'} style={{ borderRadius: 20 }}/>
                 <div style={{ flex: 1 }}></div>
             </div>
       },

@@ -64,6 +64,7 @@ module.exports = {
           productionOnly: true,
           region: "eu1"
       },
-    }
+    },
+    'gatsby-plugin-postcss'
   ],
 }

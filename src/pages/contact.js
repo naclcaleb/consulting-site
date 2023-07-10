@@ -3,12 +3,13 @@ import { Script } from 'gatsby'
 import Layout from '../components/layout'
 
 import '../dependencies/animations.js'
+import '../styles/global.css'
 
 const Contact = () => (
     <Layout>
         <section className="pb-[80px] pt-[80px]">
             <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex justify-center">
-                <div className="w-[50%]">
+                <div className="sm:w-[50%] w-[90%]">
                 <form
                     yc-form-type="Advanced"
                     method="POST"
