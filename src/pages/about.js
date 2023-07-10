@@ -52,7 +52,7 @@ export default About
 
 export const Head = () => (
     <>
-        <Seo title='Caleb Hester - About'></Seo>
+        <Seo title='About'></Seo>
         <Script className='dataScript' src='/animations.js'></Script>
     </>
 )

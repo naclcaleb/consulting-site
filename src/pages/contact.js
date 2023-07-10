@@ -101,7 +101,7 @@ export default Contact
 
 export const Head = () => (
     <>
-        <Seo title='Caleb Hester - Contact'></Seo>
+        <Seo title='Contact'></Seo>
         <Script className='dataScript' src='/animations.js'></Script>
     </>
 )

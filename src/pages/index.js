@@ -373,7 +373,7 @@ const IndexPage = ({ data }) => {
  */
 export const Head = () => <>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <Seo title='Caleb Hester - Application Development Consultant'></Seo>
+  <Seo title='Application Development Consultant'></Seo>
   <Script className='dataScript' src='/animations.js'></Script>
 </>
 
