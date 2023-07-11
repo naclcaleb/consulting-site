@@ -13,8 +13,8 @@ export default function WorkShowcase({ data }) {
     return (
         <Layout>
             <section className="pb-[80px] pt-[80px]">
-                <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex justify-center sm:pl-[20px] sm:pr-[20px]">
-                    <div className="w-[66.67%] sm:w-[91.67%]">
+                <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] md:pr-[32px] pb-[0] md:pl-[32px] sm:pr-[24px] sm:pl-[24px] flex justify-center pl-[20px] pr-[20px]">
+                    <div className="sm:w-[66.67%] w-[91.67%]">
                         <div className='flex flex-row w-[100%]'>
                             <div style={{flex: 1}}></div>
                             {post.coverImage && <GatsbyImage
