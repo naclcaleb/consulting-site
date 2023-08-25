@@ -130,7 +130,7 @@ const IndexPage = ({ data }) => {
             <div className="flex mt-[30px] items-start flex-col sm:flex-row">
               <a
                 className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid focus:outline-none block bg-[white] bg-opacity-[100%] duration-75 transform hover:scale-[1.05] sm:w-[auto] mt-[0px] w-[100%]"
-                href="https:"
+                href="https://form.feathery.io/to/PNd9AV"
               >
                 <span className="text-[#0147AA] text-opacity-[100%] font-bold">
                   Free 15-minute consult
