@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
               className="text-white text-[14px] tracking-[0.025em] pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[8px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none bg-opacity-[100%] mt-[29px] transform hover:scale-[1.05] duration-75 bg-[#BED8FC] lg:ml-[25px] ml-[0px] text-center"
               target="_blank"
               rel='noreferrer'
-              href="https://calendly.com/naclcaleb"
+              href="https://calendar.app.google/Rc8wEmpD88kY56qw8"
             >
               <span className="text-opacity-[100%] text-[#0147AA]">
                 Or, book your next appointment!
