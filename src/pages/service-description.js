@@ -36,7 +36,7 @@ const ServiceDescription = () => (
                     come back to and go over with prospective developers as you move into
                     the development stage of your app.
                 </p>
-                <div className="bg-[#b91c1c] bg-opacity-[100%] pt-[30px] pl-[30px] pb-[30px] pr-[30px] rounded-[8px] mt-[40px]">
+                {/*<div className="bg-[#b91c1c] bg-opacity-[100%] pt-[30px] pl-[30px] pb-[30px] pr-[30px] rounded-[8px] mt-[40px]">
                     <h1 className="font-bold text-[30px] text-opacity-[100%] text-[white]">
                     Note: I'm your consultant, not your developer.
                     </h1>
@@ -52,7 +52,7 @@ const ServiceDescription = () => (
                     From that point, you'll have to find a developer who will contract
                     with you to actually build the app.
                     </p>
-                </div>
+                </div>*/}
                 </div>
             </div>
         </section>
